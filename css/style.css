@@ -1,0 +1,195 @@
+:root {
+    --maincolor: #f25454;
+}
+header h5 {
+font-size: 5rem !important;
+line-height: 5rem;
+}
+    
+
+h1,h2 {
+    font-family: "Poppins", sans-serif;
+}
+nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important ;
+}
+.w-ul-nav {
+    width: 70%;
+    /* 80 media query */
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--maincolor);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff ;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--maincolor);
+}
+header .carousel-caption ,header .carousel button {
+    height: fit-content;
+    width: fit-content;
+
+}
+header .carousel button {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 7px;
+    
+}
+header .carousel-item img {
+    height: 100%;
+}
+header .carousel-control-prev {
+    top: 44% !important;
+}
+.fixed-icon-settings {
+    top: 20%;
+    z-index: 12;
+}
+.animated-ico {
+    width: 40px;
+    height: 60px;
+    border: 1px solid #fff;
+    bottom: 20px;
+}
+.animated-ico div {
+    width: 9px;
+    height: 9px;
+    background-color: #fff;
+    top: 25%;
+    animation: animated-ico 2.4s infinite ease ;
+}
+@keyframes animated-ico {
+    0% {
+        top: 25%;
+    }
+    50%{
+        top: 80%;
+    }
+    90% {
+        top: 90% ;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+.about .container,.team .container , .contact .container ,.services .container ,.contact2 .container,.review .cotainer,.services .container{
+    width:75%;
+}
+.about .container,.team .container,.services .container ,.contact2 .container,.review .container   {
+    padding: 100px 0;
+}
+.about .in-head h3 ,.team .in-head h3,.services .in-head h3 ,.contact2 .in-head h3,.review .in-head h3 {
+    font-size: 45px;
+    transform: translateY(20%);
+    text-transform: uppercase;
+}
+.about .in-head h4,.team .in-head h4,.services .in-head h4, .contact2 .in-head h4 ,.review .in-head h4{
+    font-size: 60px;
+    opacity: .06;
+    text-transform: uppercase;
+}
+.about  .hr .in-hr,.team  .hr .in-hr,.services  .hr .in-hr ,.contact2 .hr .in-hr ,.review .hr .in-hr {
+    width: 45px ;
+    height: 1px ;
+    transition: all ease .3s  ;
+    
+}
+.about  .head:hover .in-hr,.team  .head:hover .in-hr,.services .head:hover .in-hr ,.contact2 .head:hover .in-hr,.review .head:hover .in-hr {
+    width: 65px;
+}
+.about .row .item1 {
+    width:57% ; 
+}
+.about .row .item2 {
+    width: 43%;
+    font-weight: 400 ;
+}
+.about .row .progress {
+    height: 5px;
+}
+.team .card img {
+transition: all ease .3s;
+}
+.team .card:hover img {
+    transform: scale(1.2);
+}
+.team .row .icons{
+    height: fit-content !important ;
+}
+.team .row .overlay{
+    background-color: rgba(242, 84, 84, 0.85);
+    opacity: 0;
+    transition: all ease .3s;
+}
+.team .card:hover .overlay{
+    opacity: 1;
+}
+.team .card:hover .card-body h5 ,.services i ,.services .col .in1:hover h3 ,.contact2 .ico ,
+.contact2 .address:hover h4 ,.copy-rights a:hover i ,.copy-rights strong:hover ,.footer .row a:hover   {
+    color: var(--maincolor);
+}
+
+.contact .row button {
+    background-color: var(--maincolor);
+    padding: 15px 25px;
+}
+.contact .row button:hover{
+    background-color: #f38383;
+}
+footer {
+    background-color: #222;
+    background-image: url('../images/dotted-map.png');
+    background-size: contain;
+}
+
+footer a {
+    border: 1px #b0b0b0 solid;
+    border-radius: 3px;
+}
+.copy-rights {
+    background-color: #1a1a1a;
+}
+
+.ww-255 {
+    width: 13%;
+}
+.ww-25 {
+    width: 16%;
+}
+.ww-255  {
+    filter: contrast(0.5) brightness(0.5);
+}
+
+.review .carousel-control-next, .carousel-control-prev {
+    width: 40%;
+}
+.review .carousel-control-next-icon,.review .carousel-control-prev-icon {
+    background-image: none;
+}
+.float-icon {
+    background-color:rgba(242, 84, 84, 0.609);
+    width: 40px;
+    height: 40px;
+
+}
+@media  screen and (max-width:1000px) {
+    .w-ul-nav {
+        width: 80%;
+    }
+    .about .row {
+        flex-direction: column;
+    }
+    .about .row .item1 ,.about .row .item2 {
+        width: 100%;
+    }
+    .contact .button {
+        justify-content: left !important;
+    }
+    header h5{
+        font-size: 3rem !important;
+        
+    }
+
+}
